@@ -1,4 +1,4 @@
-"use strict";
+/*"use strict";
 
 var fs = require("fs");
 var path = require("path");
@@ -39,4 +39,32 @@ Object.keys(db).forEach(function(modelName) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-module.exports = db;
+module.exports = db;*/
+
+
+//Import Moduels 
+const User = require('./User')
+const Route = require('./Route');
+const Terrain = require('./Terrain');
+
+//User belongs to route
+User.belongsTo(Route, {
+  foreignKey: 'route_id',
+});
+
+//route belongs to many users
+Route.belongsToMany(User, {
+  foreignKey: 'user_id'
+});
+
+//route belongs to many terrains
+Route.belongsToMany(Terrain, {
+  foreignKey: 'terrain_id'
+});
+
+
+module.exports = {
+  User,
+  Route,
+  Terrain,
+};
