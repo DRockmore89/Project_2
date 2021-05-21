@@ -30,6 +30,14 @@ Terrain.init(
         Mountain_Trail: {
             type: DataTypes.boolean,
             allowNull: false
+    },
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+                references: {
+                    model: 'user',
+                    key: 'id'
+                }
         }
         
     },
