@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .main-header {
   background-color: blue;
   padding: 50px;
@@ -5,10 +9,37 @@
   font-size: 20px;
 }
 
-.main-one {
+/* .main-one {
   background-color: white;
+  margin-right: 3px;
+  padding: 10 20 10 900px;
+} */
+
+.h1 {
+  background-color: blue;
   align-items: center;
+  padding: 10px;
+}
+
+img {
   padding: 5px;
+  height: 1000px;
+  width: 1875px;
+  float: right;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.column-left {
+  width: 25%;
+}
+
+.column-right {
+  width: 75%;
 }
 
 p {
@@ -16,6 +47,12 @@ p {
 }
 
 .footer {
-  background-color: purple;
-  padding: 50px;
+  background-color: blue;
+  padding: 120px;
+}
+
+.runner {
+  margin-right: auto;
+  height: 10px;
+  width: 10px;
 }
