@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
 
 .main-header {
-=======
-/* .main-header {
->>>>>>> 4253564dffab78aecf6c8c793c2c09662d933e19
   background-color: blue;
   padding: 50px;
   text-align: center;
@@ -25,10 +21,14 @@
   padding: 10px;
 }
 
+.h2 {
+  margin-left: 20px;
+}
+
 img {
-  padding: 5px;
-  height: 1000px;
-  width: 1875px;
+  padding: 1px;
+  height: 850px;
+  width: 1825px;
   float: right;
 }
 
@@ -39,11 +39,19 @@ img {
 }
 
 .column-left {
+  padding: 20px;
+  background-color: white;
   width: 25%;
 }
 
 .column-right {
+  background-color: red;
   width: 75%;
+}
+
+#demo {
+  padding: 20px;
+  font-size: 30px;
 }
 
 p {
@@ -51,7 +59,6 @@ p {
 }
 
 .footer {
-<<<<<<< HEAD
   background-color: blue;
   padding: 120px;
 }
@@ -61,8 +68,3 @@ p {
   height: 10px;
   width: 10px;
 }
-=======
-  background-color: purple;
-  padding: 50px;
-} */
->>>>>>> 4253564dffab78aecf6c8c793c2c09662d933e19

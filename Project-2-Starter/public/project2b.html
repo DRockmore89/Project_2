@@ -14,7 +14,28 @@
     <main>
     <div class="row">
       <div class="column-left" style="background-color: purple;">
-        <p>Running Timer</p>
+        <h2>Running Timer</h2>
+        <p></p>
+        <form action="/action_page.php">
+          <label for="miles">Miles:</label><br>
+          <input type="text" id="miles" name="miles" value="Miles"><br>
+          <label for="pace">Pace:</label><br>
+          <input type="text" id="pace" name="pace" value="Pace"><br>
+          
+        </form>
+          <p></p> 
+          <button onClick="myTimer = setInterval(myCounter, 1000)">Start counter!</button>
+          <p id="demo">Click on the button above and I will count forever.</p>
+
+          <button onClick="clearInterval(myTimer)">Stop counter!</button>
+
+          <script>
+          var c = 0;
+          function myCounter() {
+          document.getElementById("demo").innerHTML = ++c;
+          }
+          </script> 
+        
 
       </div>
 
