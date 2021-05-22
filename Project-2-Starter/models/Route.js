@@ -21,9 +21,25 @@ Route.init(
     },
         Pace: {
             type: DataTypes.INTEGER,
-            allowNull: false}, 
+            allowNull: false 
     },
-    {
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
+    },
+        terrain_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'post',
+                key: 'id'
+            }
+        }
+    }, {
         sequelize,
         modleName: 'Route',
     });

@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
 
 .main-header {
+=======
+/* .main-header {
+>>>>>>> 4253564dffab78aecf6c8c793c2c09662d933e19
   background-color: blue;
   padding: 50px;
   text-align: center;
@@ -47,6 +51,7 @@ p {
 }
 
 .footer {
+<<<<<<< HEAD
   background-color: blue;
   padding: 120px;
 }
@@ -56,3 +61,8 @@ p {
   height: 10px;
   width: 10px;
 }
+=======
+  background-color: purple;
+  padding: 50px;
+} */
+>>>>>>> 4253564dffab78aecf6c8c793c2c09662d933e19
