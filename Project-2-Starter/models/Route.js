@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
-const { Route } = require('.');
-const sequelize = require('../config/xxxx');
+// const { Route } = require('.');
+const sequelize = require('../config/connection');
 class Route extends Model {}
 
 Route.init(
