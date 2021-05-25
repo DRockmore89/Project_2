@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
-const { Terrain } = require('.');
-const sequelize = require('../config/xxxx');
+// const { Terrain } = require('.');
+const sequelize = require('../config/connection');
 class Terrain extends Model {}
 
 Terrain.init(
@@ -12,23 +12,23 @@ Terrain.init(
         autoIncrement: true
     },
         Treadmill: {
-            type: DataTypes.boolean,
+            type: DataTypes.BOOLEAN,
             allowNull: false
     },
         Sand: {
-            type: DataTypes.boolean,
+            type: DataTypes.BOOLEAN,
             allowNull: false
     },
         Snow: {
-            type: DataTypes.boolean,
+            type: DataTypes.BOOLEAN,
             allowNull: false
     },
         Road: {
-            type: DataTypes.boolean,
+            type: DataTypes.BOOLEAN,
             allowNull: false
     },
         Mountain_Trail: {
-            type: DataTypes.boolean,
+            type: DataTypes.BOOLEAN,
             allowNull: false
     },
         user_id: {
