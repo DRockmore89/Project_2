@@ -1,14 +1,57 @@
-/* .main-header {
+* {
+  box-sizing: border-box;
+}
+
+.main-header {
   background-color: blue;
   padding: 50px;
   text-align: center;
   font-size: 20px;
 }
 
-.main-one {
+/* .main-one {
   background-color: white;
+  margin-right: 3px;
+  padding: 10 20 10 900px;
+} */
+
+.h1 {
+  background-color: blue;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
+}
+
+.h2 {
+  margin-left: 20px;
+}
+
+img {
+  padding: 1px;
+  height: 850px;
+  width: 1825px;
+  float: right;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.column-left {
+  padding: 20px;
+  background-color: white;
+  width: 25%;
+}
+
+.column-right {
+  background-color: red;
+  width: 75%;
+}
+
+#demo {
+  padding: 20px;
+  font-size: 30px;
 }
 
 p {
@@ -16,6 +59,12 @@ p {
 }
 
 .footer {
-  background-color: purple;
-  padding: 50px;
-} */
+  background-color: blue;
+  padding: 120px;
+}
+
+.runner {
+  margin-right: auto;
+  height: 10px;
+  width: 10px;
+}
