@@ -27,9 +27,24 @@
 
 img {
   padding: 1px;
-  height: 850px;
-  width: 1825px;
+  height: 875px;
+  width: 475px;
   float: right;
+}
+
+/* Create four equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 475px;
+  height: 875px;
+  padding: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column {
