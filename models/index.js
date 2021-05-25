@@ -41,27 +41,29 @@ db.Sequelize = Sequelize;
 
 module.exports = db;*/
 
-
-//Import Moduels 
-const User = require('./User')
-const Route = require('./Route');
-const Terrain = require('./Terrain');
+//Import Moduels
+const User = require("./User");
+const Route = require("./Route");
+const Terrain = require("./Terrain");
 
 //User belongs to route
-User.belongsTo(Route, {
-  foreignKey: 'route_id',
+User.hasMany(Route, {
+  foreignKey: "user_id",
 });
 
 //route belongs to many users
-Route.belongsToMany(User, {
-  foreignKey: 'user_id'
+Route.belongsTo(User, {
+  foreignKey: "user_id",
 });
 
 //route belongs to many terrains
-Route.belongsToMany(Terrain, {
-  foreignKey: 'terrain_id'
+Route.hasMany(Terrain, {
+  foreignKey: "route_id",
 });
 
+Terrain.belongsTo(Route, {
+  foreignKey: "terrain_id"
+});
 
 module.exports = {
   User,
