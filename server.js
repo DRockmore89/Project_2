@@ -1,6 +1,7 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+const sequelize = require("./config/connection");
 
 var db = require("./models");
 
@@ -16,7 +17,7 @@ app.use(express.static("public"));
 app.engine(
   "handlebars",
   exphbs({
-    defaultLayout: "main"
+    defaultLayout: "main",
   })
 );
 app.set("view engine", "handlebars");
@@ -35,10 +36,9 @@ if (process.env.NODE_ENV === "test") {
 
 // Starting the server, syncing our models ------------------------------------/
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log(‘Now listening’));
+  app.listen(PORT, () => console.log("Now listening"));
 });
-
-
+//
 // db.sequelize.sync(syncOptions).then(function() {
 //   app.listen(PORT, function() {
 //     console.log(
