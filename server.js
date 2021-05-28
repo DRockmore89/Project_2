@@ -1,6 +1,7 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+const sequelize = require("./config/connection");
 
 var db = require("./models");
 
@@ -16,7 +17,7 @@ app.use(express.static("public"));
 app.engine(
   "handlebars",
   exphbs({
-    defaultLayout: "main"
+    defaultLayout: "main",
   })
 );
 app.set("view engine", "handlebars");
@@ -39,7 +40,23 @@ db.sequelize.sync().then(function() {
    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
  });
+// =======
+sequelize.sync({ force: false }).then(() => {
+// <<<<<<< HEAD
+  app.listen(PORT, () => console.log('Now listening'));
+}).catch( err => {
+  console.log(err);
+});
 
+// >>>>>>> 3b19936353416e5464a5018603bf7321f3ca67d0
+
+
+
+
+  app.listen(PORT, () => console.log("Now listening"));
+
+//
+// >>>>>>> 5092aae4a2a88b2005c505c3c5c4584bc1d2d8a7
 // db.sequelize.sync(syncOptions).then(function() {
 //   app.listen(PORT, function() {
 //     console.log(

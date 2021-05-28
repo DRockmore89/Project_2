@@ -26,18 +26,18 @@ Route.init(
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            references: {
-                model: 'user',
-                key: 'id'
-            }
+            // references: {
+            //     model: 'user',
+            //     key: 'id'
+            // }
     },
         terrain_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            references: {
-                model: 'post',
-                key: 'id'
-            }
+            // references: {
+            //     model: 'post',
+            //     key: 'id'
+            // }
         }
     }, {
         sequelize,
