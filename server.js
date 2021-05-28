@@ -1,7 +1,12 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
+<<<<<<< HEAD
 const sequelize = require("./config/connection"); 
+=======
+const sequelize = require("./config/connection");
+
+>>>>>>> 3fb45d16402a70db8c46313743ac524e8d941386
 var db = require("./models");
 
 var app = express();
@@ -34,8 +39,41 @@ if (process.env.NODE_ENV === "test") {
 }
 
 // Starting the server, syncing our models ------------------------------------/
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+   console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+  });
+ });
+// =======
 sequelize.sync({ force: false }).then(() => {
+<<<<<<< HEAD
   app.listen(PORT, () => console.log("Now listening"));
 }).catch( err => {
   console.log(err);
 });
+=======
+// <<<<<<< HEAD
+  app.listen(PORT, () => console.log('Now listening'));
+}).catch( err => {
+  console.log(err);
+});
+
+// >>>>>>> 3b19936353416e5464a5018603bf7321f3ca67d0
+
+
+
+
+  app.listen(PORT, () => console.log("Now listening"));
+
+//
+// >>>>>>> 5092aae4a2a88b2005c505c3c5c4584bc1d2d8a7
+// db.sequelize.sync(syncOptions).then(function() {
+//   app.listen(PORT, function() {
+//     console.log(
+//       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+//       PORT,
+//       PORT
+//     );
+//   });
+// });
+>>>>>>> 3fb45d16402a70db8c46313743ac524e8d941386
