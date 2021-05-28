@@ -1,7 +1,7 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
-
+const sequelize = require('./config/connection'); 
 var db = require("./models");
 
 var app = express();
@@ -35,8 +35,11 @@ if (process.env.NODE_ENV === "test") {
 
 // Starting the server, syncing our models ------------------------------------/
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log(‘Now listening’));
+  app.listen(PORT, () => console.log('Now listening'));
+}).catch( err => {
+  console.log(err);
 });
+
 
 
 // db.sequelize.sync(syncOptions).then(function() {

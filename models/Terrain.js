@@ -34,16 +34,16 @@ Terrain.init(
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-                references: {
-                    model: 'user',
-                    key: 'id'
-                }
+                // references: {
+                //     model: 'user',
+                //     key: 'id'
+                // }
         }
         
     },
     {
         sequelize,
-        modleName: 'Terrain',
+        modelName: 'Terrain',
     });
 
 module.exports = Terrain;
