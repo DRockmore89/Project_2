@@ -34,10 +34,10 @@ Terrain.init(
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-                // references: {
-                //     model: 'user',
-                //     key: 'id'
-                // }
+            // references: {
+            //     model: User,
+            //     key: 'user_id'
+            // }
         }
         
     },
