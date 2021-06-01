@@ -47,10 +47,10 @@ JOG JOTTER will help me stay on track in any environment.
 ```
 
 ## Results
-In the past decade especially, Mental health and its importance has become more talked about and understood.
-We wanted to create an app that helps the everyday user clear their conscience and improve their mental health.
-We incorporated features such as yoga, calming meditation music, a daily diary that details the users day, positive quotes on each page, and a weekly log that tracks the user’s emotions.
-The user can take a few minutes out of their day to relax themselves and focus on the health of their mind.
+One of the biggest benefits of running is that it's good for your health.
+We wanted to create an app that helps the everyday user clear their mind and body to improve their physical health.
+You can set goals and accomplish them In addition, having a regular running time or set a goal for a better run time is a great way to stay motivated to run.
+The user can run as far as there body can take them also knowing the terrains they about approching.
 
 
 * **The requirements for Project #2 are as follows:**
