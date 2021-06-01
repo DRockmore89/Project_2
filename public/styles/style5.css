@@ -1,5 +1,5 @@
-* {
-  box-sizing: border-box;
+body {
+  background-color: cadetblue;
 }
 
 .main-header {
@@ -27,7 +27,6 @@
 
 img {
   padding: 1px;
-  height: 875px;
   width: 475px;
   float: right;
 }
@@ -75,11 +74,24 @@ p {
 
 .footer {
   background-color: blue;
-  padding: 120px;
+  text-align: center;
+  padding: 20px;
 }
 
 .runner {
   margin-right: auto;
   height: 10px;
   width: 10px;
+}
+
+.column1 {
+  float: left;
+  align-content: space-around;
+  height: 100px;
+
+}
+
+.column3 {
+  float: right;
+  align-content: space-around;
 }
