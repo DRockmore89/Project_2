@@ -5,7 +5,7 @@ link to working site:
  https://DRockmore89.github.io/JogJotter/
 ## Repository 
 link to repository:
-: https://github.com/DRockmore89/JogJotter
+: https://github.com/DRockmore89/Project_2
 ## Description
 Jog Jotter will track your distance,pace and time. It also maintains a history of your runs and improvements over time also show you a complete log of your running activities.
 wheater you're just starting out as a runner or you're a seasoned pro, this list will help you find the tools you need to get the most out of your miles.
