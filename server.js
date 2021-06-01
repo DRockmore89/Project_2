@@ -1,12 +1,9 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
-<<<<<<< HEAD
-const sequelize = require("./config/connection"); 
-=======
+// const sequelize = require("./config/connection"); 
 const sequelize = require("./config/connection");
 
->>>>>>> 3fb45d16402a70db8c46313743ac524e8d941386
 var db = require("./models");
 
 var app = express();
@@ -44,19 +41,17 @@ db.sequelize.sync().then(function() {
    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
  });
-// =======
+
 sequelize.sync({ force: false }).then(() => {
-<<<<<<< HEAD
   app.listen(PORT, () => console.log("Now listening"));
 }).catch( err => {
   console.log(err);
 });
-=======
 // <<<<<<< HEAD
-  app.listen(PORT, () => console.log('Now listening'));
-}).catch( err => {
-  console.log(err);
-});
+//   app.listen(PORT, () => console.log('Now listening'));
+// }).catch( err => {
+//   console.log(err);
+// });
 
 // >>>>>>> 3b19936353416e5464a5018603bf7321f3ca67d0
 
@@ -76,4 +71,3 @@ sequelize.sync({ force: false }).then(() => {
 //     );
 //   });
 // });
->>>>>>> 3fb45d16402a70db8c46313743ac524e8d941386
