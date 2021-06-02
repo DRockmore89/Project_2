@@ -35,19 +35,19 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 
-// Starting the server, syncing our models ------------------------------------/
-db.sequelize.sync().then(function() {
-  app.listen(PORT, function() {
-   console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
-  });
- });
+// Starting the server, syncing our models 
+// db.sequelize.sync().then(function() {
+//   app.listen(PORT, function() {
+//    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+//   });
+//  });
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log("Now listening"));
-}).catch( err => {
-  console.log(err);
-});
-// <<<<<<< HEAD
+// sequelize.sync({ force: false }).then(() => {
+//   app.listen(PORT, () => console.log("Now listening"));
+// }).catch( err => {
+//   console.log(err);
+// });
+// // <<<<<<< HEAD
 //   app.listen(PORT, () => console.log('Now listening'));
 // }).catch( err => {
 //   console.log(err);

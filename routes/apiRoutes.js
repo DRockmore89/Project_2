@@ -1,4 +1,5 @@
 var db = require("../models");
+// var findAll = require("/api/users");
 
 module.exports = function(app) {
   // Get all examples
